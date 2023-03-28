@@ -95,7 +95,9 @@ namespace BikeRental
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AboutUs app = new AboutUs();
+            app.Show();
+            this.Hide();
         }
     }
 }

@@ -52,6 +52,12 @@
     <Compile Include="customPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="startingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="startingForm.resx">
       <DependentUpon>startingForm.cs</DependentUpon>
     </EmbeddedResource>
