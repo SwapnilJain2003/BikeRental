@@ -12,6 +12,7 @@ namespace BikeRental
 {
     public partial class mainApp : Form
     {
+        Image file;
         public mainApp()
         {
             InitializeComponent();
@@ -56,6 +57,38 @@ namespace BikeRental
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fileOpen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "JPG (*.JPG)|*.jpg";
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                file = Image.FromFile(fileDialog.FileName);
+                licenseFrontPictureBox.Image = file;
+            }
+        }
+
+        private void licenseUpload_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fileOpen2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "JPG (*.JPG)|*.jpg";
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                file = Image.FromFile(fileDialog.FileName);
+                licenseBackPictureBox.Image = file;
+            }
+        }
+
+        private void homePanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
