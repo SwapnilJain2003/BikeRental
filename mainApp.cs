@@ -53,7 +53,7 @@ namespace BikeRental
 
         private void mainApp_Load(object sender, EventArgs e)
         {
-
+            homePanel.Visible = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -98,6 +98,125 @@ namespace BikeRental
             AboutUs app = new AboutUs();
             app.Show();
             this.Hide();
+        }
+
+        private void licenseFrontPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginPageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var app = new startingForm();
+            app.Show();
+            this.Hide();
+        }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fontDialog1.ShowDialog();
+            if (fontDialog1.ShowDialog() != DialogResult.Cancel)
+            {
+                licenseUpload.Font = fontDialog1.Font;
+                label1.Font = fontDialog1.Font;
+            }
+        }
+
+        private void fontDialog1_Apply(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void accountInfo_Click(object sender, EventArgs e)
+        {
+            homePanel.Visible = false;
+            accountPanel.Visible = true;
+            accountPanel.Location = new Point(195, 24);
+        }
+
+        private void customPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (listBox1.SelectedIndex)
+            {
+                case 0:
+                    result.Text = "Activa is Selected for";
+                    break;
+
+                case 1:
+                    result.Text = "Bike is Selected for";
+                    break;
+
+                case 2:
+                    result.Text = "Electric Bike is Selected for";
+                    break;
+
+                case 3:
+                    result.Text = "Electric Scooty is Selected for";
+                    break;
+
+                case 4:
+                    result.Text = "Cycle is Selected for";
+                    break;
+
+                case 5:
+                    result.Text = "Electric Cycle is Selected for";
+                    break;
+            }
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            int number = ((int)((int)numericUpDown1.Value * 300 * .05));
+            int hours = (int)(numericUpDown1.Value);
+            label2.Text = numericUpDown1.Value.ToString() + " Hours";
+            label17.Text = numericUpDown1.Value.ToString();
+            label18.Text = number.ToString();
+            label20.Text = (300*hours+number - 10).ToString();
+        }
+
+        private void monthCalendar2_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            String dateSelected = monthCalendar2.SelectionRange.Start.ToString("dd MM yyyy");
+            Console.WriteLine(dateSelected);
+            label5.Text = "on " + dateSelected;
+        }
+
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+            homePanel.Visible = true;
+            accountPanel.Visible = false;
+            homePanel.Location = new Point(195, 24);
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

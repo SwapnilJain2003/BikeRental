@@ -1,4 +1,7 @@
-﻿using System;
+﻿using iText.Kernel.Pdf;
+using iText.Layout.Element;
+using iText.Layout.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +11,11 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using System.IO;
+/*using iTextSharp.text;
+using iTextSharp.text.pdf;*/
+using iTextSharp.text;
 
 namespace BikeRental
 {
@@ -300,6 +308,38 @@ namespace BikeRental
         private void startingForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void savePdf_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            /*SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "PDF Files|*.pdf";
+            saveFileDialog1.Title = "Save as PDF";
+            saveFileDialog1.ShowDialog();
+
+            if (saveFileDialog1.FileName != "")
+            {
+                try
+                {
+                    PdfWriter writer = new PdfWriter(saveFileDialog1.FileName);
+                    PdfDocument pdf = new PdfDocument(writer);
+                    Document document = new Document(pdf);
+                    document.Add(new Paragraph("Registration Information\n\n")
+                        .SetTextAlignment(TextAlignment.CENTER)
+                    .SetBold()
+                        .SetFontSize(16));
+                    document.Add(new Paragraph($"Name: {nameTB.Text}"));
+                    document.Add(new Paragraph($"Email: {emailTB.Text}"));
+                    document.Add(new Paragraph($"Username: {usernameRegisterTB.Text}"));
+                    document.Add(new Paragraph($"Password: {passwordRegisterTB.Text}"));
+                    document.Close();
+                    MessageBox.Show("File saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error saving file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }*/
+            //}
         }
     }
 }

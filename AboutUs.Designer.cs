@@ -55,6 +55,7 @@
             this.aboutUsText.Name = "aboutUsText";
             this.aboutUsText.Size = new System.Drawing.Size(728, 338);
             this.aboutUsText.TabIndex = 0;
+            this.aboutUsText.TabStop = false;
             this.aboutUsText.Text = resources.GetString("aboutUsText.Text");
             this.aboutUsText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.aboutUsText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
