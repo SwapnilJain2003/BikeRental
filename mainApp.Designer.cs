@@ -41,15 +41,19 @@
             this.loginPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.homePanel = new BikeRental.customPanel();
-            this.accountPanel = new BikeRental.customPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.licenseBackPictureBox = new System.Windows.Forms.PictureBox();
-            this.fileOpen2 = new System.Windows.Forms.Button();
-            this.licenseUpload = new System.Windows.Forms.Label();
-            this.licenseFrontPictureBox = new System.Windows.Forms.PictureBox();
-            this.fileOpen = new System.Windows.Forms.Button();
             this.billing = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -63,24 +67,23 @@
             this.result = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.accountPanel = new BikeRental.customPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.licenseBackPictureBox = new System.Windows.Forms.PictureBox();
+            this.fileOpen2 = new System.Windows.Forms.Button();
+            this.licenseUpload = new System.Windows.Forms.Label();
+            this.licenseFrontPictureBox = new System.Windows.Forms.PictureBox();
+            this.fileOpen = new System.Windows.Forms.Button();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menu.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.homePanel.SuspendLayout();
+            this.billing.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.accountPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.licenseBackPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.licenseFrontPictureBox)).BeginInit();
-            this.billing.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // menu
@@ -216,6 +219,16 @@
             // 
             this.fontDialog1.Apply += new System.EventHandler(this.fontDialog1_Apply);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 604);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(965, 22);
+            this.statusStrip1.TabIndex = 7;
+            this.statusStrip1.Text = "ABCD";
+            // 
             // homePanel
             // 
             this.homePanel.Controls.Add(this.billing);
@@ -233,80 +246,6 @@
             this.homePanel.Size = new System.Drawing.Size(787, 626);
             this.homePanel.TabIndex = 6;
             this.homePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.customPanel1_Paint);
-            // 
-            // accountPanel
-            // 
-            this.accountPanel.Controls.Add(this.label1);
-            this.accountPanel.Controls.Add(this.licenseBackPictureBox);
-            this.accountPanel.Controls.Add(this.fileOpen2);
-            this.accountPanel.Controls.Add(this.licenseUpload);
-            this.accountPanel.Controls.Add(this.licenseFrontPictureBox);
-            this.accountPanel.Controls.Add(this.fileOpen);
-            this.accountPanel.Location = new System.Drawing.Point(195, 24);
-            this.accountPanel.Name = "accountPanel";
-            this.accountPanel.Size = new System.Drawing.Size(787, 626);
-            this.accountPanel.TabIndex = 1;
-            this.accountPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.homePanel_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(221, 282);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 32);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Upload License Back Page";
-            // 
-            // licenseBackPictureBox
-            // 
-            this.licenseBackPictureBox.Location = new System.Drawing.Point(35, 329);
-            this.licenseBackPictureBox.Name = "licenseBackPictureBox";
-            this.licenseBackPictureBox.Size = new System.Drawing.Size(353, 176);
-            this.licenseBackPictureBox.TabIndex = 4;
-            this.licenseBackPictureBox.TabStop = false;
-            // 
-            // fileOpen2
-            // 
-            this.fileOpen2.Location = new System.Drawing.Point(420, 345);
-            this.fileOpen2.Name = "fileOpen2";
-            this.fileOpen2.Size = new System.Drawing.Size(82, 31);
-            this.fileOpen2.TabIndex = 3;
-            this.fileOpen2.Text = "Select";
-            this.fileOpen2.UseVisualStyleBackColor = true;
-            this.fileOpen2.Click += new System.EventHandler(this.fileOpen2_Click);
-            // 
-            // licenseUpload
-            // 
-            this.licenseUpload.AutoSize = true;
-            this.licenseUpload.BackColor = System.Drawing.Color.Transparent;
-            this.licenseUpload.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.licenseUpload.Location = new System.Drawing.Point(221, 18);
-            this.licenseUpload.Name = "licenseUpload";
-            this.licenseUpload.Size = new System.Drawing.Size(317, 32);
-            this.licenseUpload.TabIndex = 2;
-            this.licenseUpload.Text = "Upload License Front Page";
-            this.licenseUpload.Click += new System.EventHandler(this.licenseUpload_Click);
-            // 
-            // licenseFrontPictureBox
-            // 
-            this.licenseFrontPictureBox.Location = new System.Drawing.Point(35, 71);
-            this.licenseFrontPictureBox.Name = "licenseFrontPictureBox";
-            this.licenseFrontPictureBox.Size = new System.Drawing.Size(353, 176);
-            this.licenseFrontPictureBox.TabIndex = 1;
-            this.licenseFrontPictureBox.TabStop = false;
-            this.licenseFrontPictureBox.Click += new System.EventHandler(this.licenseFrontPictureBox_Click);
-            // 
-            // fileOpen
-            // 
-            this.fileOpen.Location = new System.Drawing.Point(420, 87);
-            this.fileOpen.Name = "fileOpen";
-            this.fileOpen.Size = new System.Drawing.Size(82, 31);
-            this.fileOpen.TabIndex = 0;
-            this.fileOpen.Text = "Select";
-            this.fileOpen.UseVisualStyleBackColor = true;
-            this.fileOpen.Click += new System.EventHandler(this.fileOpen_Click);
             // 
             // billing
             // 
@@ -335,6 +274,106 @@
             this.billing.TabIndex = 38;
             this.billing.TabStop = false;
             this.billing.Text = "Total Bill";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(498, 206);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(32, 19);
+            this.label20.TabIndex = 13;
+            this.label20.Text = "300";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(498, 164);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(22, 19);
+            this.label19.TabIndex = 12;
+            this.label19.Text = "10";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(498, 121);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(32, 19);
+            this.label18.TabIndex = 11;
+            this.label18.Text = "300";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(498, 79);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(32, 19);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "300";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(14, 183);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(266, 23);
+            this.label16.TabIndex = 9;
+            this.label16.Text = "--------------------------------";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(14, 140);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(266, 23);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "--------------------------------";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(14, 98);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(266, 23);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "--------------------------------";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(14, 56);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(266, 23);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "--------------------------------";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(498, 44);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(32, 19);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "300";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(14, 79);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(43, 19);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Hours:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label9
             // 
@@ -489,112 +528,92 @@
             this.listBox1.TabIndex = 29;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // label11
+            // accountPanel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(14, 79);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(43, 19);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "Hours:";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.accountPanel.Controls.Add(this.label1);
+            this.accountPanel.Controls.Add(this.licenseBackPictureBox);
+            this.accountPanel.Controls.Add(this.fileOpen2);
+            this.accountPanel.Controls.Add(this.licenseUpload);
+            this.accountPanel.Controls.Add(this.licenseFrontPictureBox);
+            this.accountPanel.Controls.Add(this.fileOpen);
+            this.accountPanel.Location = new System.Drawing.Point(195, 24);
+            this.accountPanel.Name = "accountPanel";
+            this.accountPanel.Size = new System.Drawing.Size(787, 586);
+            this.accountPanel.TabIndex = 1;
+            this.accountPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.homePanel_Paint);
             // 
-            // label12
+            // label1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(498, 44);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(32, 19);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "300";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(221, 282);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(309, 32);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Upload License Back Page";
             // 
-            // label13
+            // licenseBackPictureBox
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(14, 56);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(266, 23);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "--------------------------------";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            this.licenseBackPictureBox.Location = new System.Drawing.Point(35, 329);
+            this.licenseBackPictureBox.Name = "licenseBackPictureBox";
+            this.licenseBackPictureBox.Size = new System.Drawing.Size(353, 176);
+            this.licenseBackPictureBox.TabIndex = 4;
+            this.licenseBackPictureBox.TabStop = false;
             // 
-            // label14
+            // fileOpen2
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(14, 98);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(266, 23);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "--------------------------------";
+            this.fileOpen2.Location = new System.Drawing.Point(420, 345);
+            this.fileOpen2.Name = "fileOpen2";
+            this.fileOpen2.Size = new System.Drawing.Size(82, 31);
+            this.fileOpen2.TabIndex = 3;
+            this.fileOpen2.Text = "Select";
+            this.fileOpen2.UseVisualStyleBackColor = true;
+            this.fileOpen2.Click += new System.EventHandler(this.fileOpen2_Click);
             // 
-            // label15
+            // licenseUpload
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(14, 140);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(266, 23);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "--------------------------------";
+            this.licenseUpload.AutoSize = true;
+            this.licenseUpload.BackColor = System.Drawing.Color.Transparent;
+            this.licenseUpload.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.licenseUpload.Location = new System.Drawing.Point(221, 18);
+            this.licenseUpload.Name = "licenseUpload";
+            this.licenseUpload.Size = new System.Drawing.Size(317, 32);
+            this.licenseUpload.TabIndex = 2;
+            this.licenseUpload.Text = "Upload License Front Page";
+            this.licenseUpload.Click += new System.EventHandler(this.licenseUpload_Click);
             // 
-            // label16
+            // licenseFrontPictureBox
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(14, 183);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(266, 23);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "--------------------------------";
+            this.licenseFrontPictureBox.Location = new System.Drawing.Point(35, 71);
+            this.licenseFrontPictureBox.Name = "licenseFrontPictureBox";
+            this.licenseFrontPictureBox.Size = new System.Drawing.Size(353, 176);
+            this.licenseFrontPictureBox.TabIndex = 1;
+            this.licenseFrontPictureBox.TabStop = false;
+            this.licenseFrontPictureBox.Click += new System.EventHandler(this.licenseFrontPictureBox_Click);
             // 
-            // label17
+            // fileOpen
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(498, 79);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(32, 19);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "300";
+            this.fileOpen.Location = new System.Drawing.Point(420, 87);
+            this.fileOpen.Name = "fileOpen";
+            this.fileOpen.Size = new System.Drawing.Size(82, 31);
+            this.fileOpen.TabIndex = 0;
+            this.fileOpen.Text = "Select";
+            this.fileOpen.UseVisualStyleBackColor = true;
+            this.fileOpen.Click += new System.EventHandler(this.fileOpen_Click);
             // 
-            // label18
+            // toolStripStatusLabel1
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(498, 121);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(32, 19);
-            this.label18.TabIndex = 11;
-            this.label18.Text = "300";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(498, 164);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(22, 19);
-            this.label19.TabIndex = 12;
-            this.label19.Text = "10";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(498, 206);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(32, 19);
-            this.label20.TabIndex = 13;
-            this.label20.Text = "300";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
             // mainApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(965, 608);
+            this.ClientSize = new System.Drawing.Size(965, 626);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.homePanel);
             this.Controls.Add(this.accountPanel);
             this.Controls.Add(this.menu);
@@ -610,15 +629,17 @@
             this.menu.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.homePanel.ResumeLayout(false);
             this.homePanel.PerformLayout();
+            this.billing.ResumeLayout(false);
+            this.billing.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.accountPanel.ResumeLayout(false);
             this.accountPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.licenseBackPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.licenseFrontPictureBox)).EndInit();
-            this.billing.ResumeLayout(false);
-            this.billing.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -670,5 +691,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

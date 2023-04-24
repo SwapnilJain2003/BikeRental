@@ -39,7 +39,7 @@
             this.password = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.RegisterGroupBox = new System.Windows.Forms.GroupBox();
-            this.savePdf = new System.Windows.Forms.LinkLabel();
+            this.savetoTxt = new System.Windows.Forms.LinkLabel();
             this.RegisterResult = new System.Windows.Forms.Label();
             this.userComboBox = new System.Windows.Forms.ComboBox();
             this.TnCLink = new System.Windows.Forms.LinkLabel();
@@ -170,7 +170,7 @@
             // RegisterGroupBox
             // 
             this.RegisterGroupBox.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.RegisterGroupBox.Controls.Add(this.savePdf);
+            this.RegisterGroupBox.Controls.Add(this.savetoTxt);
             this.RegisterGroupBox.Controls.Add(this.RegisterResult);
             this.RegisterGroupBox.Controls.Add(this.registerBtn);
             this.RegisterGroupBox.Controls.Add(this.userComboBox);
@@ -202,16 +202,16 @@
             this.RegisterGroupBox.TabStop = false;
             this.RegisterGroupBox.Text = "Register";
             // 
-            // savePdf
+            // savetoTxt
             // 
-            this.savePdf.AutoSize = true;
-            this.savePdf.Location = new System.Drawing.Point(446, 220);
-            this.savePdf.Name = "savePdf";
-            this.savePdf.Size = new System.Drawing.Size(96, 21);
-            this.savePdf.TabIndex = 24;
-            this.savePdf.TabStop = true;
-            this.savePdf.Text = "Save as Pdf";
-            this.savePdf.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.savePdf_LinkClicked);
+            this.savetoTxt.AutoSize = true;
+            this.savetoTxt.Location = new System.Drawing.Point(446, 220);
+            this.savetoTxt.Name = "savetoTxt";
+            this.savetoTxt.Size = new System.Drawing.Size(129, 21);
+            this.savetoTxt.TabIndex = 24;
+            this.savetoTxt.TabStop = true;
+            this.savetoTxt.Text = "Save as text file";
+            this.savetoTxt.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.savePdf_LinkClicked);
             // 
             // RegisterResult
             // 
@@ -534,7 +534,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(737, 505);
+            this.ClientSize = new System.Drawing.Size(737, 885);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.LoginGroupBox);
             this.Controls.Add(this.pictureBox2);
@@ -600,7 +600,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ToolTip loginToolTip;
         private System.Windows.Forms.ToolTip registerToolTip;
-        private System.Windows.Forms.LinkLabel savePdf;
+        private System.Windows.Forms.LinkLabel savetoTxt;
     }
 }
 

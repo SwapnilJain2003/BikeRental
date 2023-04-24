@@ -114,11 +114,13 @@ namespace BikeRental
 
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            toolStripStatusLabel1.Text = "Changing Font, Please wait!!!";
             fontDialog1.ShowDialog();
             if (fontDialog1.ShowDialog() != DialogResult.Cancel)
             {
                 licenseUpload.Font = fontDialog1.Font;
                 label1.Font = fontDialog1.Font;
+                toolStripStatusLabel1.Text = "Font Changed";
             }
         }
 

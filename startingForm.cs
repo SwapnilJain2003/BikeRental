@@ -314,7 +314,7 @@ namespace BikeRental
         {
             /*SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "PDF Files|*.pdf";
-            saveFileDialog1.Title = "Save as PDF";
+            saveFileDialog1.Title = "Save as Text";
             saveFileDialog1.ShowDialog();
 
             if (saveFileDialog1.FileName != "")
